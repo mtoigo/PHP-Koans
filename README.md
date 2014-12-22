@@ -1,10 +1,6 @@
 PHP-Koans
 =========
 
-PHP programming exercises.
+PHP programming exercises. Designed as a series of code blocks that must be fixed to pass.
 
-Setup OS X
-
-curl -sS https://getcomposer.org/installer | php
-composer.phar install (CAN MAYBE LEAVE OUT, JUST SETTING UP AUTOLOADER)
 php test.php
