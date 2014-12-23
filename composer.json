@@ -1,7 +1,7 @@
 {
-	"require": {
-		"league/climate": "*"
-	},
+    "require": {
+        "league/climate": "*"
+    },
     "autoload": {
         "psr-4": {"PHPKoans\\": ""}
     }
