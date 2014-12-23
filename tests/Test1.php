@@ -7,7 +7,7 @@ class Test1 extends KoansTest
 {
     public function __construct()
     {
-    	// TODO - ideally refactor so we don't override our constructor
+        // TODO - ideally refactor so we don't override our constructor
         $this->example = new Example1();
 
         parent::__construct();

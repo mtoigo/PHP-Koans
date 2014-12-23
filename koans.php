@@ -11,33 +11,33 @@ $terminal->br();
 // TODO - Welcome if there's nothing filled out yet
 
 $exercises = [
-	new PHPKoans\Examples\Example1,
-	new PHPKoans\Examples\Example2
+    new PHPKoans\Examples\Example1,
+    new PHPKoans\Examples\Example2
 ];
 
 // Calculate where we are
 foreach($exercises as $chapter) {
 
-	$lesson = new PHPKoans\Tests\KoansTest($chapter);
-	$exercisesTotal += $lesson->exercisesTotal;
+    $lesson = new PHPKoans\Tests\KoansTest($chapter);
+    $exercisesTotal += $lesson->exercisesTotal;
 
-	if (!$incomplete) {
+    if (!$incomplete) {
 
-		try {
-			$lesson->testExamples();
-		} catch (Exception $e) {
-			$incomplete = true;
-		}
+        try {
+            $lesson->testExamples();
+        } catch (Exception $e) {
+            $incomplete = true;
+        }
 
-		$exercisesCompleted += $lesson->exercisesCompleted;
-	}
+        $exercisesCompleted += $lesson->exercisesCompleted;
+    }
 }
 
 $percentComplete = round(($exercisesCompleted / $exercisesTotal) * 100);
 
 if ($percentComplete < 100) {
-	$terminal->green()->out('PHP Koans are '.$percentComplete.'% Complete. Keep at it!');
+    $terminal->green()->out('PHP Koans are '.$percentComplete.'% Complete. Keep at it!');
 } else {
-	$terminal->green()->out('ALL DONE');
+    $terminal->green()->out('ALL DONE');
 }
 $terminal->br();
