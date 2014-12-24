@@ -1,4 +1,2 @@
-composer.phar
-php-cs-fixer.phar
 composer.lock
 vendor/
