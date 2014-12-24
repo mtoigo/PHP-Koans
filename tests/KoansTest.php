@@ -29,9 +29,9 @@ class KoansTest
 
     private function finish($exerciseErrorMessage)
     {
-        $terminal = new \League\CLImate\CLImate;
+        $terminal = new \League\CLImate\CLImate();
 
-        if($percentComplete < 100) {
+        if ($percentComplete < 100) {
             $terminal->bold()->out("  Chapter ".$this->example->chapterNumber.": ".$this->example->chapterName."\n");
             $terminal->out($exerciseErrorMessage);
             $terminal->br();
@@ -47,11 +47,11 @@ class KoansTest
         $this->exercisesCompleted++;
     }
 
-    public function testExamples() {
-
+    public function testExamples()
+    {
         $examples = get_class_methods($this->example);
 
-        array_walk($examples, function($example) {
+        array_walk($examples, function ($example) {
 
             try {
                 $this->example->{$example}();
@@ -62,8 +62,7 @@ class KoansTest
                 $exerciseErrorMessage .= '    Edit '.$e->getFile().':'.$example.'() to fix this.';
                 $this->finish($exerciseErrorMessage);
             }
-            
+
         });
     }
 }
-?>
