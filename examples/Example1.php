@@ -104,7 +104,7 @@ class Example1
         $becomesABoolean = 1;
 
         // CODE HERE
-        $becomesABoolean = (bool) $becomesABoolean;
+        //$becomesABoolean = (bool) $becomesABoolean;
 
         // DO NOT EDIT BELOW
         if ($becomesABoolean !== true) {
