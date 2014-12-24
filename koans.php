@@ -1,9 +1,9 @@
 <?php
 require 'vendor/autoload.php';
 
-// TODO - Welcome if there's nothing filled out yet
-// TODO - PHP Check for version
-// TODO - Clean up example, chapter, lesson nameing
+// TODO 3. - Welcome if there's nothing filled out yet
+// TODO 2. - PHP Check for version
+// TODO 1. - Clean up example, chapter, lesson nameing
 
 $tests = new PHPKoans\Tests\AllTests();
 $tests->outputHeader();
