@@ -1,36 +1,50 @@
 <?php
 namespace PHPKoans\Tests;
 
+use \League\CLImate\CLImate as Terminal;
+
 class AllTests
 {
+    /**
+     * @var Terminal Pretty output for our terminal
+     */
     private $terminal;
 
-    private $tests;
+    /**
+     * @var array Instances of classes that we're testing
+     */
+    private $classesToTest;
 
+    /**
+     * @var integer Number of tests total in our class we're testing
+     */
     private $exercisesTotal;
 
+    /**
+     * @var integer Number of tests completed in our class we're testing
+     */
     private $exercisesCompleted;
 
     public function __construct()
     {
-        $this->terminal = new \League\CLImate\CLImate();
+        $this->terminal = new Terminal();
 
-        $this->tests = [
-            new \PHPKoans\Examples\Example1(),
-            new \PHPKoans\Examples\Example2(),
+        $this->classesToTest = [
+            new \PHPKoans\Chapters\Chapter1(),
+            new \PHPKoans\Chapters\Chapter2()
         ];
     }
 
     public function runTests()
     {
         // Calculate where we are
-        foreach ($this->tests as $chapter) {
+        foreach ($this->classesToTest as $chapter) {
             $lesson = new \PHPKoans\Tests\KoansTest($chapter);
             $this->exercisesTotal += $lesson->exercisesTotal;
 
             if (!$incomplete) {
                 try {
-                    $lesson->testExamples();
+                    $lesson->testExamplesInClass();
                 } catch (\Exception $e) {
                     $incomplete = true;
                 }

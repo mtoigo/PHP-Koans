@@ -1,13 +1,15 @@
 <?php
-namespace PHPKoans\Examples;
+namespace PHPKoans\Chapters;
 
-class Example2
+use PHPKoans\Tests\Chapter as Chapter;
+
+class Chapter2 extends Chapter
 {
-    public $chapterNumber = 2;
-    public $chapterName = 'Math';
+    public $number = 2;
+    public $name = 'Math';
 
     /**
-     * Example 2.1
+     * Exercise 2.1
      *
      * INSTRUCTIONS
      * Declare a variable at the top of the function below named $anyVariable
@@ -24,7 +26,7 @@ class Example2
     }
 
     /**
-     * Example 2.1
+     * Exercise 2.2
      *
      * INSTRUCTIONS
      * Declare a variable at the top of the function below named $anyVariable

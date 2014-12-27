@@ -1,13 +1,12 @@
 <?php
-namespace PHPKoans\Examples;
+namespace PHPKoans\Chapters;
 
-class Example1
+use PHPKoans\Tests\Chapter as Chapter;
+
+class Chapter1 extends Chapter
 {
-    public $chapterNumber = 1;
-    public $chapterName = 'Variables';
-
     /**
-     * Example 1.1
+     * Exercise 1.1
      *
      * INSTRUCTIONS
      * Declare a variable at the top of the function below named $anyVariable
@@ -24,7 +23,7 @@ class Example1
     }
 
     /**
-     * Example 1.2
+     * Exercise 1.2
      *
      * INSTRUCTIONS
      * Declare a variable at the top of the function below named $shouldBeAnInt that contains an integer value
@@ -41,7 +40,7 @@ class Example1
     }
 
     /**
-     * Example 1.3
+     * Exercise 1.3
      *
      * INSTRUCTIONS
      * Declare a variable at the top of the function below named $shouldBeAFloat that contains a float
@@ -58,7 +57,7 @@ class Example1
     }
 
     /**
-     * Example 1.4
+     * Exercise 1.4
      *
      * INSTRUCTIONS
      * Declare a variable at the top of the function below named $shouldBeABoolean with a value of true
@@ -75,7 +74,7 @@ class Example1
     }
 
     /**
-     * Example 1.5
+     * Exercise 1.5
      *
      * INSTRUCTIONS
      * Change the value of $shouldBeNull to a non null value at CODE HERE
@@ -94,7 +93,7 @@ class Example1
     }
 
     /**
-     * Example 1.6
+     * Exercise 1.6
      *
      * INSTRUCTIONS
      * Cast $becomesABoolean so that it is converted to a boolean value at CODE HERE
@@ -104,11 +103,46 @@ class Example1
         $becomesABoolean = 1;
 
         // CODE HERE
-        //$becomesABoolean = (bool) $becomesABoolean;
+        $becomesABoolean = (bool) $becomesABoolean;
 
         // DO NOT EDIT BELOW
         if ($becomesABoolean !== true) {
             throw new \Exception('$becomesABoolean must be cast to a boolean.');
         }
+    }
+
+    /**
+     * Exercise 1.7
+     *
+     * INSTRUCTIONS
+     * A variable named $alreadySet exists. Assign it's value to a new variable named $copiedValue.
+     */
+    public function variableAssignment($alreadySet)
+    {
+        // CODE HERE
+        $copiedValue = $alreadySet;
+
+        // DO NOT EDIT BELOW
+        if ($copiedValue !== 'example string') {
+            throw new \Exception('$copiedValue must contain the value of $alreadySet');
+        }
+    }
+
+
+    // TODO - Add constants
+
+
+    public $number = 1;
+    public $name = 'Variables';
+    public $exerciseTests;
+
+    public function __construct()
+    {
+        $this->exerciseTests = [
+            'variableAssignment' => function()
+            {
+                $this->variableAssignment('example string');
+            }
+        ];
     }
 }

@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 // TODO 3. - Welcome if there's nothing filled out yet
 // TODO 2. - PHP Check for version
-// TODO 1. - Clean up example, chapter, lesson nameing
+// TODO - Refactor some from KoansTest to Example
 
 $tests = new PHPKoans\Tests\AllTests();
 $tests->outputHeader();
