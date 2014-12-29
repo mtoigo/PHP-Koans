@@ -1,7 +1,7 @@
 <?php
 namespace PHPKoans\Tests;
 
-use \League\CLImate\CLImate as Terminal;
+use League\CLImate\CLImate as Terminal;
 
 /**
  * Implementing and tracking all chapters we're testing on
@@ -36,7 +36,7 @@ class AllTests
         $this->terminal = new Terminal();
 
         $this->classesToTest = [
-            new \PHPKoans\Chapters\Chapter1()
+            new \PHPKoans\Chapters\Chapter1(),
         ];
     }
 

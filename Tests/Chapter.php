@@ -8,7 +8,7 @@ abstract class Chapter
 {
     /**
      * @var integer Number of this chapter
-    */
+     */
     public $number;
 
     /**

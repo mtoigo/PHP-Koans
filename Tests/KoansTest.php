@@ -1,8 +1,7 @@
 <?php
 namespace PHPKoans\Tests;
 
-use PHPKoans\Tests\Chapter as Chapter;
-use \League\CLImate\CLImate as Terminal;
+use League\CLImate\CLImate as Terminal;
 
 /**
  * Test exercises in a chapter
@@ -36,7 +35,7 @@ class KoansTest
 
     /**
      * Finish testing of a particular class
-     * @param string $exerciseErrorMessage Formatted error message related to what failed
+     * @param  string    $exerciseErrorMessage Formatted error message related to what failed
      * @throws Exception Throws an exception to pass control back up a level
      */
     private function finishChapter($exerciseErrorMessage)
@@ -81,7 +80,7 @@ class KoansTest
 
     /**
      * Test an exercise in our chapter
-     * @param string $exercise name of exercise to test
+     * @param  string    $exercise name of exercise to test
      * @throws Exception if a test didn't complete
      */
     private function testExercise($exercise)
@@ -107,7 +106,7 @@ class KoansTest
     private function exercisesInChapter()
     {
         // Ignore our constructor
-        return array_filter(get_class_methods($this->chapter), function($functionName) {
+        return array_filter(get_class_methods($this->chapter), function ($functionName) {
             if ($functionName != '__construct') {
                 return true;
             }
@@ -116,15 +115,16 @@ class KoansTest
 
     /**
      * Format an exception to a nice error message for the terminal
-     * @param Exception $exception Exception from a failing test
-     * @param string $failingTestFunctionName Name of function that failed our test
-     * @return string formatted error message for console output
+     * @param  Exception $exception               Exception from a failing test
+     * @param  string    $failingTestFunctionName Name of function that failed our test
+     * @return string    formatted error message for console output
      */
     private function formatFailingException(\Exception $exception, $failingTestFunctionName)
-    {   
+    {
         $errorMessage = '    Example '.$this->chapter->number.'.'.($this->exercisesCompleted + 1).' needs a solution.'."\n";
         $errorMessage .= '    '.$exception->getMessage()."\n";
         $errorMessage .= '    Edit '.$exception->getFile().':'.$failingTestFunctionName.'() to fix this.';
+
         return $errorMessage;
     }
 }

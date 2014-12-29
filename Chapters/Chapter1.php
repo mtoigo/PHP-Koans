@@ -155,10 +155,9 @@ class Chapter1 extends Chapter
         $this->name = 'Variables';
 
         $this->exerciseTests = [
-            'variableAssignment' => function()
-            {
+            'variableAssignment' => function () {
                 $this->variableAssignment('example string');
-            }
+            },
         ];
     }
 }
