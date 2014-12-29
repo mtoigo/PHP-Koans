@@ -1,7 +1,10 @@
 <?php
 namespace PHPKoans\Tests;
 
-class Chapter
+/**
+ * Base class for a chapter of testable exercises
+ */
+abstract class Chapter
 {
     /**
      * @var integer Number of this chapter

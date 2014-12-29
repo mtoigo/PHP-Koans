@@ -4,6 +4,9 @@ namespace PHPKoans\Tests;
 use PHPKoans\Tests\Chapter as Chapter;
 use \League\CLImate\CLImate as Terminal;
 
+/**
+ * Test exercises in a chapter
+ */
 class KoansTest
 {
     /**
