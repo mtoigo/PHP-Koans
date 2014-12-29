@@ -119,6 +119,8 @@ class KoansTest
      */
     private function formatFailingException(\Exception $exception, $failingTestFunctionName)
     {   
+        print_r($exception->getTrace()[0]['function']);
+        print_r($exception->getTrace()[0]['line']);
         $errorMessage = '    Example '.$this->chapter->number.'.'.($this->exercisesCompleted + 1).' needs a solution.'."\n";
         $errorMessage .= '    '.$exception->getMessage()."\n";
         $errorMessage .= '    Edit '.$exception->getFile().':'.$failingTestFunctionName.'() to fix this.';
