@@ -51,7 +51,7 @@ class Chapter1 extends Chapter
     public function declareAFloat()
     {
         // CODE HERE
-         $shouldBeAFloat = 22.34;
+        $shouldBeAFloat = 22.34;
 
         // DO NOT EDIT BELOW
         if (!is_float($shouldBeAFloat)) {
@@ -68,7 +68,7 @@ class Chapter1 extends Chapter
     public function declareABoolean()
     {
         // CODE HERE
-         $shouldBeABoolean = true;
+        $shouldBeABoolean = true;
 
         // DO NOT EDIT BELOW
         if ($shouldBeABoolean !== true) {
@@ -87,7 +87,7 @@ class Chapter1 extends Chapter
         $shouldBeNull = 27;
 
         // CODE HERE
-         $shouldBeNull = null;
+        $shouldBeNull = null;
 
         // DO NOT EDIT BELOW
         if (!is_null($shouldBeNull)) {
