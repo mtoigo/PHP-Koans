@@ -25,6 +25,9 @@ class AllTests
      */
     private $exercisesCompleted;
 
+    /**
+     * Default constructor defining array of chapters to test
+     */
     public function __construct()
     {
         $this->terminal = new Terminal();
@@ -35,30 +38,38 @@ class AllTests
         ];
     }
 
-    public function runTests()
+    /**
+     * Run tests in all of our chapters
+     */
+    public function testChapters()
     {
-        // Calculate where we are
-        foreach ($this->classesToTest as $chapter) {
-            $lesson = new \PHPKoans\Tests\KoansTest($chapter);
-            $this->exercisesTotal += $lesson->exercisesTotal;
+        // Test our chapters and keep track of where we are
+        foreach ($this->classesToTest as $class) {
+            $chapter = new \PHPKoans\Tests\KoansTest($class);
+            $this->exercisesTotal += $chapter->exercisesTotal;
 
             if (!$incomplete) {
                 try {
-                    $lesson->testExercises();
+                    $chapter->testExercises();
+                    $this->exercisesCompleted += $chapter->exercisesCompleted;
                 } catch (\Exception $e) {
                     $incomplete = true;
                 }
-
-                $this->exercisesCompleted += $lesson->exercisesCompleted;
             }
         }
     }
 
+    /**
+     * Calculate percentage of all exercises that are complete
+     */
     private function percentComplete()
     {
         return round(($this->exercisesCompleted / $this->exercisesTotal) * 100);
     }
 
+    /**
+     * Terminal output to start
+     */
     public function outputHeader()
     {
         $this->terminal->br();
@@ -66,6 +77,9 @@ class AllTests
         $this->terminal->br();
     }
 
+    /**
+     * Terminal Output to end
+     */
     public function outputFooter()
     {
         $percentComplete = $this->percentComplete();

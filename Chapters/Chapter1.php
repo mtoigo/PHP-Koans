@@ -3,6 +3,9 @@ namespace PHPKoans\Chapters;
 
 use PHPKoans\Tests\Chapter as Chapter;
 
+/**
+ * Edit the exercises below
+ */
 class Chapter1 extends Chapter
 {
     /**
@@ -128,16 +131,29 @@ class Chapter1 extends Chapter
         }
     }
 
+    /**
+     * Exercise 1.8
+     *
+     * INSTRUCTIONS
+     * Declare a constant named SAMPLE_CONSTANT with a string value of 'testing'
+     */
+    public function declaringConstants()
+    {
+        // CODE HERE
+        define('SAMPLE_CONSTANT', 'testing');
 
-    // TODO - Add constants
+        // DO NOT EDIT BELOW
+        if (SAMPLE_CONSTANT !== 'testing') {
+            throw new \Exception('Constants SAMPLE_CONSTANT must equal \'testing\'');
+        }
+    }
 
-
-    public $number = 1;
-    public $name = 'Variables';
-    public $exerciseTests;
-
+    // DO NOT EDIT BELOW
     public function __construct()
     {
+        $this->number = 1;
+        $this->name = 'Variables';
+
         $this->exerciseTests = [
             'variableAssignment' => function()
             {
