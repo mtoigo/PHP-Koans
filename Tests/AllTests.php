@@ -44,7 +44,7 @@ class AllTests
 
             if (!$incomplete) {
                 try {
-                    $lesson->testExamplesInClass();
+                    $lesson->testExercises();
                 } catch (\Exception $e) {
                     $incomplete = true;
                 }
