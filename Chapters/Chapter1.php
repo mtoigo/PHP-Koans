@@ -17,7 +17,6 @@ class Chapter1 extends Chapter
     public function declareAVariable()
     {
         // CODE HERE
-        $anyVariable = true;
 
         // DO NOT EDIT BELOW
         if (!isset($anyVariable)) {
@@ -34,7 +33,6 @@ class Chapter1 extends Chapter
     public function declareAnInt()
     {
         // CODE HERE
-        $shouldBeAnInt = 2;
 
         // DO NOT EDIT BELOW
         if (!is_int($shouldBeAnInt)) {
@@ -51,7 +49,6 @@ class Chapter1 extends Chapter
     public function declareAFloat()
     {
         // CODE HERE
-         $shouldBeAFloat = 22.34;
 
         // DO NOT EDIT BELOW
         if (!is_float($shouldBeAFloat)) {
@@ -68,7 +65,6 @@ class Chapter1 extends Chapter
     public function declareABoolean()
     {
         // CODE HERE
-         $shouldBeABoolean = true;
 
         // DO NOT EDIT BELOW
         if ($shouldBeABoolean !== true) {
@@ -87,7 +83,6 @@ class Chapter1 extends Chapter
         $shouldBeNull = 27;
 
         // CODE HERE
-         $shouldBeNull = null;
 
         // DO NOT EDIT BELOW
         if (!is_null($shouldBeNull)) {
@@ -106,7 +101,6 @@ class Chapter1 extends Chapter
         $becomesABoolean = 1;
 
         // CODE HERE
-        $becomesABoolean = (bool) $becomesABoolean;
 
         // DO NOT EDIT BELOW
         if ($becomesABoolean !== true) {
@@ -123,7 +117,6 @@ class Chapter1 extends Chapter
     public function variableAssignment($alreadySet)
     {
         // CODE HERE
-        $copiedValue = $alreadySet;
 
         // DO NOT EDIT BELOW
         if ($copiedValue !== 'example string') {
@@ -140,7 +133,6 @@ class Chapter1 extends Chapter
     public function declaringConstants()
     {
         // CODE HERE
-        define('SAMPLE_CONSTANT', 'testing');
 
         // DO NOT EDIT BELOW
         if (SAMPLE_CONSTANT !== 'testing') {
