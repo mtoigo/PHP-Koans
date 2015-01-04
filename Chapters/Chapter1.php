@@ -137,28 +137,28 @@ class Chapter1 extends Chapter
         $this->name = 'Variables';
 
         $this->exerciseTests = [
-            'declareAVariable' => function() {
+            'declareAVariable' => function () {
                 $result = $this->declareAVariable();
                 if (!isset($result)) {
                     throw new \Exception('$anyVariable was not properly declared.');
                 }
             },
-            'declareAnInt' => function() {
+            'declareAnInt' => function () {
                 if (!is_int($this->declareAnInt())) {
                     throw new \Exception('$shouldBeAnInt was not declared as an integer.');
                 }
             },
-            'declareAFloat' => function() {
+            'declareAFloat' => function () {
                 if (!is_float($this->declareAFloat())) {
                     throw new \Exception('$shouldBeAFloat was not declared as an float.');
                 }
             },
-            'declareABoolean' => function() {
+            'declareABoolean' => function () {
                 if ($this->declareABoolean() !== true) {
                     throw new \Exception('$shouldBeABoolean does not contain the value true.');
                 }
             },
-            'setNull' => function() {
+            'setNull' => function () {
                 if (!is_null($this->setNull(27))) {
                     throw new \Exception('$shouldBeNull is not equal to null.');
                 }

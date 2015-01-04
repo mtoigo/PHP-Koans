@@ -17,6 +17,7 @@ class Chapter2 extends Chapter
     public function addition($valueOne, $valueTwo)
     {
         // CODE HERE
+        $variableSum = $valueOne + $valueTwo;
 
         // DO NOT EDIT BELOW
         return $variableSum;
@@ -29,11 +30,11 @@ class Chapter2 extends Chapter
         $this->name = 'Math';
 
         $this->exerciseTests = [
-            'addition' => function() {
+            'addition' => function () {
                 if ($this->addition(22, 10) !== 32) {
                     throw new \Exception('$variableSum is not equal to the sum of $valueOne and $valueTwo');
                 }
-            }
+            },
         ];
     }
 }
