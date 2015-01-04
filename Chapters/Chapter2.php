@@ -17,7 +17,6 @@ class Chapter2 extends Chapter
     public function addition($valueOne, $valueTwo)
     {
         // CODE HERE
-        $variableSum = $valueOne + $valueTwo;
 
         // DO NOT EDIT BELOW
         return $variableSum;
