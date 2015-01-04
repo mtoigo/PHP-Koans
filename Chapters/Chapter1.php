@@ -126,9 +126,7 @@ class Chapter1 extends Chapter
         $copiedValue = $alreadySet;
 
         // DO NOT EDIT BELOW
-        if ($copiedValue !== 'example string') {
-            throw new \Exception('$copiedValue must contain the value of $alreadySet');
-        }
+        return $copiedValue;
     }
 
     /**
@@ -156,7 +154,10 @@ class Chapter1 extends Chapter
 
         $this->exerciseTests = [
             'variableAssignment' => function () {
-                $this->variableAssignment('example string');
+                $testVariable = 'example string';
+                if ($this->variableAssignment($testVariable) !== $testVariable) {
+                    throw new \Exception('$copiedValue must contain the value of $alreadySet');
+                }
             },
         ];
     }
