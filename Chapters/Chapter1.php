@@ -12,16 +12,14 @@ class Chapter1 extends Chapter
      * Exercise 1.1
      *
      * INSTRUCTIONS
-     * Declare a variable at the top of the function below named $anyVariable
+     * Declare a variable at the top of the function below named $anyVariable with any value.
      */
     public function declareAVariable()
     {
         // CODE HERE
 
         // DO NOT EDIT BELOW
-        if (!isset($anyVariable)) {
-            throw new \Exception('$anyVariable was not properly declared.');
-        }
+        return $anyVariable;
     }
 
     /**
@@ -35,9 +33,7 @@ class Chapter1 extends Chapter
         // CODE HERE
 
         // DO NOT EDIT BELOW
-        if (!is_int($shouldBeAnInt)) {
-            throw new \Exception('$shouldBeAnInt was not declared as an integer.');
-        }
+        return $shouldBeAnInt;
     }
 
     /**
@@ -51,9 +47,7 @@ class Chapter1 extends Chapter
         // CODE HERE
 
         // DO NOT EDIT BELOW
-        if (!is_float($shouldBeAFloat)) {
-            throw new \Exception('$shouldBeAFloat was not declared as an float.');
-        }
+        return $shouldBeAFloat;
     }
 
     /**
@@ -67,9 +61,7 @@ class Chapter1 extends Chapter
         // CODE HERE
 
         // DO NOT EDIT BELOW
-        if ($shouldBeABoolean !== true) {
-            throw new \Exception('$shouldBeABoolean does not contain the value true.');
-        }
+        return $shouldBeABoolean;
     }
 
     /**
@@ -78,16 +70,12 @@ class Chapter1 extends Chapter
      * INSTRUCTIONS
      * Change the value of $shouldBeNull to a non null value at CODE HERE
      */
-    public function setNull()
+    public function setNull($shouldBeNull)
     {
-        $shouldBeNull = 27;
-
         // CODE HERE
 
         // DO NOT EDIT BELOW
-        if (!is_null($shouldBeNull)) {
-            throw new \Exception('$shouldBeNull is not equal to null.');
-        }
+        return $shouldBeNull;
     }
 
     /**
@@ -96,16 +84,12 @@ class Chapter1 extends Chapter
      * INSTRUCTIONS
      * Cast $becomesABoolean so that it is converted to a boolean value at CODE HERE
      */
-    public function variableCasting()
+    public function variableCasting($becomesABoolean)
     {
-        $becomesABoolean = 1;
-
         // CODE HERE
 
         // DO NOT EDIT BELOW
-        if ($becomesABoolean !== true) {
-            throw new \Exception('$becomesABoolean must be cast to a boolean.');
-        }
+        return $becomesABoolean;
     }
 
     /**
@@ -119,9 +103,7 @@ class Chapter1 extends Chapter
         // CODE HERE
 
         // DO NOT EDIT BELOW
-        if ($copiedValue !== 'example string') {
-            throw new \Exception('$copiedValue must contain the value of $alreadySet');
-        }
+        return $copiedValue;
     }
 
     /**
@@ -147,8 +129,42 @@ class Chapter1 extends Chapter
         $this->name = 'Variables';
 
         $this->exerciseTests = [
+            'declareAVariable' => function() {
+                $result = $this->declareAVariable();
+                if (!isset($result)) {
+                    throw new \Exception('$anyVariable was not properly declared.');
+                }
+            },
+            'declareAnInt' => function() {
+                if (!is_int($this->declareAnInt())) {
+                    throw new \Exception('$shouldBeAnInt was not declared as an integer.');
+                }
+            },
+            'declareAFloat' => function() {
+                if (!is_float($this->declareAFloat())) {
+                    throw new \Exception('$shouldBeAFloat was not declared as an float.');
+                }
+            },
+            'declareABoolean' => function() {
+                if ($this->declareABoolean() !== true) {
+                    throw new \Exception('$shouldBeABoolean does not contain the value true.');
+                }
+            },
+            'setNull' => function() {
+                if (!is_null($this->setNull(27))) {
+                    throw new \Exception('$shouldBeNull is not equal to null.');
+                }
+            },
+            'variableCasting' => function () {
+                if ($this->variableCasting(1) !== true) {
+                    throw new \Exception('$becomesABoolean must be cast to a boolean.');
+                }
+            },
             'variableAssignment' => function () {
-                $this->variableAssignment('example string');
+                $testVariable = 'example string';
+                if ($this->variableAssignment($testVariable) !== $testVariable) {
+                    throw new \Exception('$copiedValue must contain the value of $alreadySet');
+                }
             },
         ];
     }
