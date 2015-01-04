@@ -15,4 +15,7 @@ Designed to teach the basics of PHP and inspired by the absolutely awesome http:
 3. Run ```php koans.php``` from a terminal and follow the instructions.
 
 #Status
-I'm building this out as a side project when I have time, but everything in the master branch will always be complete. If you get stuck you can also check the solutions branch to see the pieces of missing code to fix the problems.
+I'm building this out as a side project when I have time so the exercises don't cover all of the concepts they should yet, but everything in the master branch will always be complete. If you get stuck you can also check the solutions branch to see the pieces of missing code to fix the problems.
+
+#Feedback
+If you found these helpful, spot a bug, or want to help contribute please [contact me](http://www.matt-toigo.com/contact).
