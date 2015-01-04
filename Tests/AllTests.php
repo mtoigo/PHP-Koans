@@ -37,6 +37,7 @@ class AllTests
 
         $this->classesToTest = [
             new \PHPKoans\Chapters\Chapter1(),
+            new \PHPKoans\Chapters\Chapter2(),
         ];
     }
 
