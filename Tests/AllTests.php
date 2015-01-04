@@ -48,16 +48,17 @@ class AllTests
     {
         // Test our chapters and keep track of where we are
         foreach ($this->classesToTest as $class) {
+            
             $chapter = new \PHPKoans\Tests\KoansTest($class);
             $this->exercisesTotal += $chapter->exercisesTotal;
-
+        
             if (!$incomplete) {
                 try {
                     $chapter->testExercises();
-                    $this->exercisesCompleted += $chapter->exercisesCompleted;
                 } catch (\Exception $e) {
                     $incomplete = true;
                 }
+                $this->exercisesCompleted += $chapter->exercisesCompleted;
             }
         }
     }
