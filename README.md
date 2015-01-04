@@ -6,13 +6,13 @@ Learn PHP by fixing failing tests. Designed as a series of successive problems w
 Designed to teach the basics of PHP and inspired by the absolutely awesome http://www.rubykoans.com Requires PHP 5.3 or greater.
 
 #Prerequisites
-* Install PHP 5.3 or higher and the ability to run the ```php``` from the command line.
+* Install PHP 5.3 or higher and the ability to run the ```php``` command from the command line.
 * Install Composer from https://getcomposer.org
 
 # Getting Started
-1. Checkout or fork this repository.
-2. Open up a terminal run ```composer install``` from the checked out project.
+1. Checkout or fork this repository and make sure you're on the master branch.
+2. Open up a terminal run ```composer install``` from the checked out project to install dependencies.
 3. Run ```php koans.php``` from a terminal and follow the instructions.
 
 #Status
-The framework for the tests is there and I'm still working through building out all of the actual coding exercises. Let me know if you found it useful.
+I'm building this out as a side project when I have time, but everything in the master branch will always be complete. If you get stuck you can also check the solutions branch to see the pieces of missing code to fix the problems.
