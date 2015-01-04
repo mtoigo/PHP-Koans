@@ -101,17 +101,13 @@ class Chapter1 extends Chapter
      * INSTRUCTIONS
      * Cast $becomesABoolean so that it is converted to a boolean value at CODE HERE
      */
-    public function variableCasting()
+    public function variableCasting($becomesABoolean)
     {
-        $becomesABoolean = 1;
-
         // CODE HERE
         $becomesABoolean = (bool) $becomesABoolean;
 
         // DO NOT EDIT BELOW
-        if ($becomesABoolean !== true) {
-            throw new \Exception('$becomesABoolean must be cast to a boolean.');
-        }
+        return $becomesABoolean;
     }
 
     /**
@@ -153,6 +149,11 @@ class Chapter1 extends Chapter
         $this->name = 'Variables';
 
         $this->exerciseTests = [
+            'variableCasting' => function () {
+                if ($this->variableCasting(1) !== true) {
+                    throw new \Exception('$becomesABoolean must be cast to a boolean.');
+                }
+            },
             'variableAssignment' => function () {
                 $testVariable = 'example string';
                 if ($this->variableAssignment($testVariable) !== $testVariable) {
