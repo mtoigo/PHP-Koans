@@ -23,6 +23,22 @@ class Chapter2 extends Chapter
         return $variableSum;
     }
 
+    /**
+     * Exercise 2.2
+     *
+     * INSTRUCTIONS
+     * Assume the variables $valueOne and $valueTwo exist as positive integers. Set $variableDifference to
+     * the result of subtracing $valueTwo from $valueOne.
+     */
+    public function subtraction($valueOne, $valueTwo)
+    {
+        // CODE HERE
+        $variableDifference = $valueOne - $valueTwo;
+
+        // DO NOT EDIT BELOW
+        return $variableDifference;
+    }
+
     // DO NOT EDIT BELOW
     public function __construct()
     {
@@ -33,6 +49,11 @@ class Chapter2 extends Chapter
             'addition' => function () {
                 if ($this->addition(22, 10) !== 32) {
                     throw new \Exception('$variableSum is not equal to the sum of $valueOne and $valueTwo');
+                }
+            },
+            'subtraction' => function () {
+                if ($this->subtraction(22, 10) !== 12) {
+                    throw new \Exception('$variableDifference is not equal to $valueTwo subtracted from $valueOne');
                 }
             },
         ];
