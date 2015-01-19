@@ -94,19 +94,11 @@ class Chapter2 extends Chapter
                     throw new \Exception('$fourTimes is not equal to $valueOne times 4');
                 }
             },
-<<<<<<< HEAD
             'division' => function () {
                 if ($this->division(36) !== 9) {
                     throw new \Exception('$oneFourth is not equal to $valueOne divided by 4');
                 }
             },
-=======
-            'division' => function() {
-                if($this->division(36) !== 9) {
-                    throw new \Exception('$oneFourth is not equal to $valueOne divided by 4');
-                }
-            }
->>>>>>> Adding division example
         ];
     }
 }
