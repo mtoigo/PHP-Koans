@@ -57,6 +57,20 @@ class Chapter2 extends Chapter
         return $fourTimes;
     }
 
+    /**
+     * Exercise 2.4
+     *
+     * INSTRUCTIONS
+     * Assume the variables $valueOne is a positive integer. $oneFourth to $valueOne divided by 4
+     */
+    public function division($valueOne)
+    {
+        // CODE HERE
+
+        // DO NOT EDIT BELOW
+        return $oneFourth;
+    }
+
     // DO NOT EDIT BELOW
     public function __construct()
     {
@@ -78,7 +92,12 @@ class Chapter2 extends Chapter
                 if ($this->multiplication(6) !== 24) {
                     throw new \Exception('$fourTimes is not equal to $valueOne times 4');
                 }
-            }
+            },
+            'division' => function () {
+                if ($this->division(36) !== 9) {
+                    throw new \Exception('$oneFourth is not equal to $valueOne divided by 4');
+                }
+            },
         ];
     }
 }
