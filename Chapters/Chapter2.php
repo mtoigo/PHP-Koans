@@ -61,7 +61,7 @@ class Chapter2 extends Chapter
      * Exercise 2.4
      *
      * INSTRUCTIONS
-     * Assume the variables $valueOne is a positive integer. $oneFourth to $valueOne divided by 4
+     * Assume the variables $valueOne is a positive integer. Set the variable $oneFourth to $valueOne divided by 4
      */
     public function division($valueOne)
     {
@@ -70,6 +70,22 @@ class Chapter2 extends Chapter
 
         // DO NOT EDIT BELOW
         return $oneFourth;
+    }
+
+    /**
+     * Exercise 2.5
+     *
+     * INSTRUCTIONS
+     * Assume the variables $valueOne is a positive integer. Set the variable $remainder
+     * to the remainder when dividing $valueOne by 5.
+     */
+    public function modulus($valueOne)
+    {
+        // CODE HERE
+        $remainder = $valueOne % 5;
+
+        // DO NOT EDIT BELOW
+        return $remainder;
     }
 
     // DO NOT EDIT BELOW
@@ -97,6 +113,11 @@ class Chapter2 extends Chapter
             'division' => function () {
                 if ($this->division(36) !== 9) {
                     throw new \Exception('$oneFourth is not equal to $valueOne divided by 4');
+                }
+            },
+            'modulus' => function () {
+                if ($this->modulus(43) !== 3) {
+                    throw new \Exception('$remainder is not equal to the remainder when dividing $valueOne by 5');
                 }
             },
         ];
