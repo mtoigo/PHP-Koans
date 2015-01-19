@@ -66,6 +66,7 @@ class Chapter2 extends Chapter
     public function division($valueOne)
     {
         // CODE HERE
+        $oneFourth = $valueOne / 4;
 
         // DO NOT EDIT BELOW
         return $oneFourth;
