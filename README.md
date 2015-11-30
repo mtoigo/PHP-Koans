@@ -14,6 +14,13 @@ Designed to teach the basics of PHP and inspired by the absolutely awesome http:
 2. Open up a terminal run ```composer install``` from the checked out project to install dependencies.
 3. Run ```php koans.php``` from a terminal and follow the instructions.
 
+#Exercises
+
+##Chapter 1 - Variables
+1. [Declaration](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L17) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L17)]
+
+##Chapter 2 - Math
+
 #Status
 I'm building this out as a side project when I have time so the exercises don't cover all of the concepts they should yet, but everything in the master branch will always be complete. If you get stuck you can also check the solutions branch to see the pieces of missing code to fix the problems.
 
