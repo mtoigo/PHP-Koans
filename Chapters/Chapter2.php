@@ -88,6 +88,23 @@ class Chapter2 extends Chapter
         return $remainder;
     }
 
+    /**
+     * Exercise 2.6
+     *
+     * INSTRUCTIONS
+     * Assume $valueOne and $valueTwo are numbers with an unknown number of decimal places
+     * Round $valueOne to the nearest whole number. Round $valueTwo to the nearest hundredth 0.00
+     */
+    public function rounding($valueOne, $valueTwo)
+    {
+        // CODE HERE
+        $valueOne = round($valueOne);
+        $valueTwo = round($valueTwo, 2);
+
+        // DO NOT EDIT BELOW
+        return [$valueOne, $valueTwo];
+    }
+
     // DO NOT EDIT BELOW
     public function __construct()
     {
@@ -120,6 +137,15 @@ class Chapter2 extends Chapter
                     throw new \Exception('$remainder is not equal to the remainder when dividing $valueOne by 5');
                 }
             },
+            'rounding' => function() {
+                $result = $this->rounding(33.25, 567.948);
+                if ($result[0] != 33) {
+                    throw new \Exception('$valueOne is not rounded to the nearest whole number');
+                }
+                if ($result[1] != 567.95) {
+                    throw new \Exception('$valueTwo is not rounded to the hundredths place');
+                }
+            }
         ];
     }
 }
