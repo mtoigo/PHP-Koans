@@ -17,7 +17,14 @@ Designed to teach the basics of PHP and inspired by the absolutely awesome http:
 #Exercises
 
 ##Chapter 1 - Variables
-1. [Declaration](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L17) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L17)]
+1. [Declaration](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L12) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L20)]
+2. [Integers](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L26) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L35)]
+3. [Floats](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L40) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L50)]
+4. [Booleans](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L54) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L65)]
+5. [Null](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L68) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L80)]
+6. [Casting](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L82) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L95)]
+7. [Assignment](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L96) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L110)]
+8. [Constants](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter1.php#L110) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter1.php#L125)]
 
 ##Chapter 2 - Math
 
