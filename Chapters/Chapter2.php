@@ -127,6 +127,39 @@ class Chapter2 extends Chapter
         return [$valueOne, $valueTwo];
     }
 
+    /**
+     * Exercise 2.7
+     *
+     * INSTRUCTIONS
+     * Assume $valueOne and $valueTwo are two numbers with an unknown number of decimal places
+     * Round $valueOne up to the nearest whole number. Round $valueTwo down to the nearest whole number
+     */
+    public function roundingUpAndDown($valueOne, $valueTwo)
+    {
+        // CODE HERE
+        $valueOne = ceil($valueOne);
+        $valueTwo = floor($valueTwo);
+
+        // DO NOT EDIT BELOW
+        return [$valueOne, $valueTwo];
+    }
+
+    /** Exercise 2.8
+     *
+     * INSTRUCTIONS
+     * Assume $valueOne and $valueTwo are whole numbers;
+     * Increment $valueOne using the ++ operator. Decrement (reduce) the value of $valueTwo using the -- operator
+     */
+    public function incrementAndDecrement($valueOne, $valueTwo)
+    {
+        // CODE HERE
+        $valueOne++;
+        $valueTwo--;
+
+        // DO NOT EDIT BELOW
+        return [$valueOne, $valueTwo];
+    }
+
     // DO NOT EDIT BELOW
     public function __construct()
     {
