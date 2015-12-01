@@ -122,7 +122,7 @@ class Chapter2 extends Chapter
     public function incrementAndDecrement($valueOne, $valueTwo)
     {
         // CODE HERE
-        
+
         // DO NOT EDIT BELOW
         return [$valueOne, $valueTwo];
     }

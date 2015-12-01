@@ -32,7 +32,9 @@ Designed to teach the basics of PHP and inspired by the absolutely awesome http:
 3. [Multiplication](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L43) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L54)]
 4. [Division](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L58) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L69)]
 5. [Modulus](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L72) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L85)]
-6. [Rounding](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L87) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L101)]
+6. [Rounding Naturally](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L87) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L101)]
+7. [Rounding Up and Down](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L102) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L118)]
+8. [Increment and Decrement](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L116) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L134)]
 
 #Status
 I'm building this out as a side project when I have time so the exercises don't cover all of the concepts they should yet, but everything in the master branch will always be complete. If you get stuck you can also check the solutions branch to see the pieces of missing code to fix the problems.
