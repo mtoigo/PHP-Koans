@@ -105,6 +105,39 @@ class Chapter2 extends Chapter
         return [$valueOne, $valueTwo];
     }
 
+    /**
+     * Exercise 2.7
+     *
+     * INSTRUCTIONS
+     * Assume $valueOne and $valueTwo are two numbers with an unknown number of decimal places
+     * Round $valueOne up to the nearest whole number. Round $valueTwo down to the nearest whole number
+     */
+    public function roundingUpAndDown($valueOne, $valueTwo)
+    {
+        // CODE HERE
+        $valueOne = ceil($valueOne);
+        $valueTwo = floor($valueTwo);
+
+        // DO NOT EDIT BELOW
+        return [$valueOne, $valueTwo];
+    }
+
+    /** Exercise 2.8
+     *
+     * INSTRUCTIONS
+     * Assume $valueOne and $valueTwo are whole numbers;
+     * Increment $valueOne using the ++ operator. Decrement (reduce) the value of $valueTwo using the -- operator
+     */
+    public function incrementAndDecrement($valueOne, $valueTwo)
+    {
+        // CODE HERE
+        $valueOne++;
+        $valueTwo--;
+
+        // DO NOT EDIT BELOW
+        return [$valueOne, $valueTwo];
+    }
+
     // DO NOT EDIT BELOW
     public function __construct()
     {
@@ -144,6 +177,24 @@ class Chapter2 extends Chapter
                 }
                 if ($result[1] != 567.95) {
                     throw new \Exception('$valueTwo is not rounded to the hundredths place');
+                }
+            },
+            'roundingUpAndDown' => function() {
+                $result = $this->roundingUpAndDown(22.25, 28.98);
+                if ($result[0] != 23) {
+                    throw new \Exception('$valueOne is not rounded up to the nearest whole number');
+                }
+                if ($result[1] != 28) {
+                    throw new \Exception('$valueTwo is not rounded down to the nearest whole number');
+                }
+            },
+            'incrementAndDecrement' => function() {
+                $result = $this->incrementAndDecrement(61, 34);
+                if ($result[0] != 62) {
+                    throw new \Exception('$valueOne is not increased by 1');
+                }
+                if ($result[1] != 33) {
+                    throw new \Exception('$valueTwo is not reduced by 1');
                 }
             }
         ];
