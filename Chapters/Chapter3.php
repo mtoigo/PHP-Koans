@@ -132,13 +132,18 @@ class Chapter3 extends Chapter
      * Exercise 3.8
      *
      * INSTRUCTIONS
+     * Assume $valueOne is a string.
+     * Set $foundLocation to the position (integer) where the string 'mountain' occurs inside of $valueOne
+     * For example if $valueOne = 'To the mountains', $foundLocation should equal 7
+     * Keep in mind that the first character is considered in a position of 0
      */
     public function searching($valueOne)
     {
         // CODE HERE
+        $foundLocation = strpos($valueOne, 'mountains');
 
         // DO NOT EDIT BELOW
-
+        return $foundLocation;
     }
 
     // DO NOT EDIT BELOW
@@ -195,6 +200,11 @@ class Chapter3 extends Chapter
                 }
                 if ($result[2] !== 'SampleCase') {
                     throw new \Exception('$firstUpper must be equal to $valueOne with just the first character upper case');
+                }
+            },
+            'searching' => function() {
+                if ($this->searching('Biking or skiing in the mountains?') !== 24) {
+                    throw new \Exception('$foundLocation should be equal to the postion of \'mountains\' in $valueOne');
                 }
             }
         ];
