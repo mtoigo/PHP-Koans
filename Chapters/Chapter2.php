@@ -137,8 +137,6 @@ class Chapter2 extends Chapter
     public function roundingUpAndDown($valueOne, $valueTwo)
     {
         // CODE HERE
-        $valueOne = ceil($valueOne);
-        $valueTwo = floor($valueTwo);
 
         // DO NOT EDIT BELOW
         return [$valueOne, $valueTwo];
@@ -153,8 +151,6 @@ class Chapter2 extends Chapter
     public function incrementAndDecrement($valueOne, $valueTwo)
     {
         // CODE HERE
-        $valueOne++;
-        $valueTwo--;
 
         // DO NOT EDIT BELOW
         return [$valueOne, $valueTwo];
