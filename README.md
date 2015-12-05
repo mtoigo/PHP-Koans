@@ -36,6 +36,16 @@ Designed to teach the basics of PHP and inspired by the absolutely awesome http:
 7. [Rounding Up and Down](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L102) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L118)]
 8. [Increment and Decrement](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter2.php#L116) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter2.php#L134)]
 
+##Chapter 3 - Strings
+1. [Concatenation](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L12) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L21)]
+2. [Substitution](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L27) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L37)]
+3. [Replacement](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L42) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L53)]
+4. [Length](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L57) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L69)]
+5. [Single Characters](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L72) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L85)]
+6. [Substrings](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L87) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L103)]
+7. [Changing Case](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L104) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L123)]
+8. [Searching](https://github.com/mtoigo/PHP-Koans/blob/master/Chapters/Chapter3.php#L121) - [[S](https://github.com/mtoigo/PHP-Koans/blob/solutions/Chapters/Chapter3.php#L143)]
+
 #Status
 I'm building this out as a side project when I have time so the exercises don't cover all of the concepts they should yet, but everything in the master branch will always be complete. If you get stuck you can also check the solutions branch to see the pieces of missing code to fix the problems.
 
